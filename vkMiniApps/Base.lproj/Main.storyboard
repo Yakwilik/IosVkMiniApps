@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,13 +54,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpe-O7-eC2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpe-O7-eC2">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Tfm-Hj-g75"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system"/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5s-v1-orq"/>
                                                 </connections>
@@ -96,13 +95,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZN-at-dRw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZN-at-dRw">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Mlj-eo-oGZ"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lk4-at-0VR"/>
                                                 </connections>
@@ -142,13 +140,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6is-lf-7OI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6is-lf-7OI">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="pxw-hZ-Ll2"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzz-2A-g6l"/>
                                                 </connections>
@@ -188,13 +185,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-Pb-FEr">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-Pb-FEr">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="iOm-SV-qKI"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-cJ-qUw"/>
                                                 </connections>
@@ -234,13 +230,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-gY-aii">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-gY-aii">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="pip-jv-94o"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Luy-6p-BJR"/>
                                                 </connections>
@@ -280,13 +275,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-xN-Ybl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-xN-Ybl">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="EER-b6-Ees"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihC-50-sYE"/>
                                                 </connections>
@@ -326,13 +320,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgI-we-xMQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgI-we-xMQ">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="8nP-K2-bIz"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsg-Uh-gNM"/>
                                                 </connections>
@@ -372,13 +365,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj6-WJ-3vN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj6-WJ-3vN">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Fu1-N0-tEy"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51C-QA-4rP"/>
                                                 </connections>
@@ -418,13 +410,12 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXC-ow-6ad">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXC-ow-6ad">
                                                 <rect key="frame" x="349" y="0.0" width="35" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="9IH-SU-ord"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <state key="normal" image="link.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV5-ln-dis"/>
                                                 </connections>
@@ -508,7 +499,6 @@
                                         <constraint firstAttribute="width" constant="35" id="y9G-tH-pSg"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="link" catalog="system"/>
                                     <connections>
                                         <action selector="clickVkLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8s-CT-7Al"/>
                                     </connections>
@@ -533,7 +523,7 @@
         <image name="calendar" width="204" height="204"/>
         <image name="citydrive" width="70" height="70"/>
         <image name="cloud" width="204" height="204"/>
-        <image name="link" catalog="system" width="128" height="122"/>
+        <image name="link.circle" catalog="system" width="128" height="121"/>
         <image name="mygames" width="22.666666030883789" height="22.666666030883789"/>
         <image name="samokat" width="68" height="68"/>
         <image name="sferum" width="68" height="68"/>
