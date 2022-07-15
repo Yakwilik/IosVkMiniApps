@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vkMiniApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vVF-Qk-WWw">
+                                <rect key="frame" x="15" y="59" width="384" height="749"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤘 Сервисы VK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-3W-HjY">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLj-JX-uKD" userLabel="Vk">
+                                        <rect key="frame" x="0.0" y="29" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="vk" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-sd-RPY">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="ZCi-CV-bWf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-Kp-fWj">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ВКонтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3u-9z-4AV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Самая популярная соцсеть и первое суперприложение в России" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-F8-Le4">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="nNF-Tm-Y2J"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpe-O7-eC2">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Tfm-Hj-g75"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system"/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5s-v1-orq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Wrf-Nm-sfE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiD-wv-DsH" userLabel="MyGames">
+                                        <rect key="frame" x="0.0" y="109" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="mygames" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-Pm-kkl">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="Cg7-3b-57l"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c41-3Z-Otg">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="My.Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab3-WZ-aLL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="26"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игры для ПК, консолей и смартфонов, в которые играют сотни миллионов геймеров" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNV-Yg-g9v">
+                                                        <rect key="frame" x="0.0" y="26" width="279" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZN-at-dRw">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Mlj-eo-oGZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lk4-at-0VR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="p4v-Zv-E1o"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="T4V-rl-KC5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-Ix-fnv" userLabel="Sferum">
+                                        <rect key="frame" x="0.0" y="189" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="sferum" translatesAutoresizingMaskIntoConstraints="NO" id="jSC-yZ-ans">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="qh7-ih-nhU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="keA-te-1hb">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Сферум" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldX-to-0c8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Онлайн-платформа для обучения и образовательных коммуникаций" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCc-fB-jOE">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="CHi-T5-1oM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6is-lf-7OI">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="pxw-hZ-Ll2"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzz-2A-g6l"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="GAP-zY-HVW"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="xoZ-n5-WEE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-62-s7t" userLabel="Youla">
+                                        <rect key="frame" x="0.0" y="269" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="youla" translatesAutoresizingMaskIntoConstraints="NO" id="FKL-FC-eKs">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="FGp-0g-NAd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="36o-NH-ddV">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Юла" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llS-n7-gPK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервис объявлений на основе геолокации и интересов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA2-kW-m8E">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="pxd-et-2Oe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-Pb-FEr">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="iOm-SV-qKI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-cJ-qUw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="Y6E-JD-9u9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="tKy-Sh-XdL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-JP-59D" userLabel="Samokat">
+                                        <rect key="frame" x="0.0" y="349" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="samokat" translatesAutoresizingMaskIntoConstraints="NO" id="B0S-iV-oW2">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="AQd-Po-mir"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UGd-2k-7Oo">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Самокат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-y6-0Pd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Онлайн-ретейлер с доставкой товаров за 15 минут" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7n-O0-3qa">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="vaQ-Ut-dyv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-gY-aii">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="pip-jv-94o"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Luy-6p-BJR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="yVA-FA-Iep"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ETg-aO-I6p"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-uV-YqB" userLabel="Citidrive">
+                                        <rect key="frame" x="0.0" y="429" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="citydrive" translatesAutoresizingMaskIntoConstraints="NO" id="NVl-OS-Sqh">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="RBZ-do-V8f"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z29-cT-INM">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ситидрайв" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pz-sN-MKt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каршеринг-сервис в крупнейших российских городах" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kl-Ba-Van">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="2ec-bZ-A9m"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-xN-Ybl">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="EER-b6-Ees"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihC-50-sYE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="rk3-Ld-jTO"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="0de-y2-B0G"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYb-Zh-fAN" userLabel="Cloud">
+                                        <rect key="frame" x="0.0" y="509" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="6kp-0u-nFR">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="dCg-zI-szH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8uM-46-fkV">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Облако" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66C-jh-l0J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервис для хранения файлов и совместной работы с ними" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-vg-eU9">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="MUg-Yq-xEd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgI-we-xMQ">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="8nP-K2-bIz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsg-Uh-gNM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="hgX-EI-9MV"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Eag-wV-mWH"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-q0-yQe" userLabel="Apteki">
+                                        <rect key="frame" x="0.0" y="589" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="apteki" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-GF-5NI">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="3Zv-qE-ZP8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-B5-4WX">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Все аптеки" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njx-TH-z65">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Онлайн-сервис для поиска и щзаказа лекарств по лучшей цене" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-CZ-cle">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="n28-I6-ecT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj6-WJ-3vN">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="Fu1-N0-tEy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51C-QA-4rP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="dmc-v0-sRl"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="sSv-0P-hg2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qg8-3h-7kh" userLabel="Calendar">
+                                        <rect key="frame" x="0.0" y="669" width="384" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4Cx-p0-JIE">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="IEb-BQ-sT0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-MW-Uaf">
+                                                <rect key="frame" x="70" y="0.0" width="279" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Календарь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT4-de-MXC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="35"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Планирование дня и эффективное управление временем" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfd-yy-E9u">
+                                                        <rect key="frame" x="0.0" y="35" width="279" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="eqk-V6-quZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXC-ow-6ad">
+                                                <rect key="frame" x="349" y="0.0" width="35" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="9IH-SU-ord"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="clickLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV5-ln-dis"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="t9o-7u-ddx"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="NtI-Jn-oYj"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="CAh-ne-9RR"/>
+                                <constraints>
+                                    <constraint firstItem="rLj-JX-uKD" firstAttribute="trailing" secondItem="CAh-ne-9RR" secondAttribute="trailing" id="Byb-CU-9gv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="vVF-Qk-WWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5fZ-l8-xSH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVF-Qk-WWw" secondAttribute="trailing" constant="15" id="osm-BA-wBs"/>
+                            <constraint firstItem="vVF-Qk-WWw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="uqH-ua-2S4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aptekiLink" destination="Jj6-WJ-3vN" id="Btv-wA-gO2"/>
+                        <outlet property="calendarLink" destination="bXC-ow-6ad" id="zcK-ws-Ksk"/>
+                        <outlet property="citidriveLink" destination="sjY-xN-Ybl" id="rdq-HR-p7v"/>
+                        <outlet property="cloudLink" destination="YgI-we-xMQ" id="rhl-ho-7EY"/>
+                        <outlet property="mygamesLink" destination="FZN-at-dRw" id="ro5-WS-Bv8"/>
+                        <outlet property="samokatLink" destination="HLq-gY-aii" id="RcB-8i-N8W"/>
+                        <outlet property="sferumLink" destination="6is-lf-7OI" id="udY-cJ-bHq"/>
+                        <outlet property="vkLink" destination="qpe-O7-eC2" id="bq2-rN-rDe"/>
+                        <outlet property="youlaLink" destination="b7B-Pb-FEr" id="DON-T5-tOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="J2d-Kt-Ysi">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="135"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервисы VK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjk-IM-U4Q">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="R0p-m5-fjN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxP-tk-R5d">
+                            <rect key="frame" x="0.0" y="45" width="384" height="90"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="vk" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-4d-nvI">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="CRp-BA-fe6"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-rN-YQq">
+                                    <rect key="frame" x="70" y="0.0" width="279" height="90"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ВКонтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMV-6D-Okv">
+                                            <rect key="frame" x="0.0" y="0.0" width="279" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Самая популярная соцсеть и первое суперприложение в России" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DL-SE-0Od">
+                                            <rect key="frame" x="0.0" y="29" width="279" height="61"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3A-As-uSu">
+                                    <rect key="frame" x="349" y="0.0" width="35" height="90"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="y9G-tH-pSg"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="link" catalog="system"/>
+                                    <connections>
+                                        <action selector="clickVkLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8s-CT-7Al"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="wpn-3c-WpD"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="rEw-5w-PV6"/>
+                    <constraints>
+                        <constraint firstItem="UxP-tk-R5d" firstAttribute="trailing" secondItem="rEw-5w-PV6" secondAttribute="trailing" id="TPD-aU-Tl2"/>
+                    </constraints>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apteki" width="68" height="68"/>
+        <image name="calendar" width="204" height="204"/>
+        <image name="citydrive" width="70" height="70"/>
+        <image name="cloud" width="204" height="204"/>
+        <image name="link" catalog="system" width="128" height="122"/>
+        <image name="mygames" width="22.666666030883789" height="22.666666030883789"/>
+        <image name="samokat" width="68" height="68"/>
+        <image name="sferum" width="68" height="68"/>
+        <image name="vk" width="87" height="87"/>
+        <image name="youla" width="68" height="68"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
